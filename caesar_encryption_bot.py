@@ -1,24 +1,21 @@
 pip install pytelegrambotapi
 
-# Подключаем модуль случайных чисел //
+# Подключаем модуль случайных чисел // Connect the random number module
 import random
 
-# Подключаем модуль для Телеграма //
+# Подключаем модуль для Телеграма // Connect the module for Telegram
 import telebot
 
-# Указываем токен
-bot = telebot.TeleBot('1218016762:AAHJeVmWerX53IE9DsWea4fCkqAZv-gcVKE')
+# Токен // Token 
+bot = telebot.TeleBot('@YOUR_TOKEN@')
 
-# Импортируем типы из модуля, чтобы создавать кнопки //
-from telebot import types
-
-# Алфавит 
+# Алфавит // Alphabet
 alphabet_e = 'abcdefghijklmnopqrstuvwxyz'
 alphabet_r = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
-# Ключ(число, на которое символ будет смещаться) //
+# Ключ(число, на которое символ будет смещаться) // Key (number by which the symbol will be shifted) 
 k = 14 
 
-# Метод, который получает сообщения и обрабатывает их //
+# Метод, который получает сообщения и обрабатывает их // A method that receives messages and processes them
 @bot.message_handler(content_types=['text']) 
 
 def caezzar(message):
