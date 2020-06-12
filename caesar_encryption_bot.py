@@ -57,6 +57,6 @@ def caezzar(message):
     # Отправляем зашифрованное/расшифрованное сообщение пользователю // Send an encrypted/decrypted message to the user
     bot.send_message(message.from_user.id, output)    
 
-# Запускаем постоянную работу бота в Телеграме //
+# Запускаем постоянную работу бота в Телеграме // Launching a permanent bot job in Telegram
 bot.polling(none_stop=True, interval=0)
 
